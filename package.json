@@ -1,0 +1,20 @@
+{
+  "name": "nano-insurance-limited-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "npm install && npm run build && rm -rf node_modules",
+    "build": "lessc --glob --clean-css=\"--s1 --advanced\" src/styles/app.less src/dist/app.css",
+    "watch": "less-watch-compiler src/styles src/dist app.less"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "less": "^3.8.1",
+    "less-plugin-clean-css": "^1.5.1",
+    "less-plugin-glob": "^2.0.2",
+    "less-watch-compiler": "^1.11.3"
+  },
+  "dependencies": {}
+}
